@@ -1,112 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#f5f5f3" />
-  <meta name="description" content="Ronard Muimi is a data analyst using data to make complex problems easier to understand." />
+  <meta name="description" content="Ronard Muimi is a data analyst exploring healthcare, public data and practical ways to make information useful." />
+  <meta name="theme-color" content="#ffffff" />
   <title>Ronard Muimi — Data Analyst</title>
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme === "dark" || savedTheme === "light") {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    } catch {}
+  </script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Ronard Muimi, home">
-      <span class="wordmark-mark" aria-hidden="true">RM</span>
-      <span>Ronard Muimi</span>
-    </a>
-    <nav class="site-nav" aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#work">Selected work</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <a class="home-link" href="#main" aria-label="Ronard Muimi, home">RM</a>
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Switch to dark mode">
+      <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="3.5"></circle>
+        <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path>
+      </svg>
+      <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8 8.5 8.5 0 1 0 20.2 15.1Z"></path>
+      </svg>
+    </button>
   </header>
 
-  <main id="top">
-    <section class="hero" aria-labelledby="intro-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Data analyst · Kenya</p>
-        <h1 id="intro-title">Turning data<br />into <span>clearer</span><br />decisions.</h1>
-        <p class="hero-summary">I work at the intersection of data and healthcare, making complex information useful to the people who need it.</p>
-        <a class="text-link hero-link" href="#work">Explore selected work <span aria-hidden="true">↘</span></a>
-      </div>
-      <div class="hero-aside" aria-hidden="true">
-        <span class="aside-index">01 / 03</span>
-        <div class="orbit">
-          <span class="orbit-core">DATA<br />WITH<br />PURPOSE</span>
-          <span class="orbit-ring orbit-ring-one"></span>
-          <span class="orbit-ring orbit-ring-two"></span>
-          <span class="orbit-dot"></span>
-        </div>
-        <span class="aside-caption">Curiosity, care<br />and clear thinking.</span>
-      </div>
+  <main id="main">
+    <a class="skip-link" href="#content">Skip to main</a>
+    <section class="intro" aria-labelledby="intro-title">
+      <h1 id="intro-title">Ronard Muimi</h1>
+      <p class="intro-line">data analyst · healthcare · curious by nature</p>
+      <p class="intro-line">R · SQL · Python · Excel · Tableau</p>
+      <nav class="social-links" aria-label="Social links">
+        <a href="https://github.com/r-muimih" target="_blank" rel="noopener noreferrer">github</a>
+        <a href="https://www.linkedin.com/in/ronard-muimi-468453144/" target="_blank" rel="noopener noreferrer">linkedin</a>
+        <a href="mailto:ronnieranks66@gmail.com">email</a>
+      </nav>
     </section>
 
-    <section class="about section" id="about" aria-labelledby="about-title">
-      <div class="section-heading">
-        <p class="eyebrow">A little about me</p>
-        <span class="section-number">01</span>
-      </div>
-      <div class="about-content">
-        <h2 id="about-title">Good analysis starts with <span>the right question.</span></h2>
-        <div class="about-detail">
-          <p>My clinical experience shapes how I approach data: with context, care and a focus on real-world outcomes. I use analytical tools to find patterns, explain what they mean and help turn them into practical next steps.</p>
-          <ul class="skill-list" aria-label="Tools and skills">
-            <li>R</li><li>SQL</li><li>Python</li><li>Excel</li><li>Tableau</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <div class="divider" aria-hidden="true"></div>
 
-    <section class="work section" id="work" aria-labelledby="work-title">
-      <div class="section-heading">
-        <p class="eyebrow">Selected work</p>
-        <span class="section-number">02</span>
-      </div>
-      <div class="work-heading">
-        <h2 id="work-title">Projects built to <span>make sense.</span></h2>
-        <a class="text-link" href="https://github.com/r-muimih" target="_blank" rel="noopener noreferrer">More on GitHub <span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="project-grid">
-        <a class="project-card" href="https://github.com/r-muimih/Medical-Equipment-Utilization-Analysis" target="_blank" rel="noopener noreferrer">
-          <div class="project-meta"><span>01 / HEALTHCARE ANALYTICS</span><span aria-hidden="true">↗</span></div>
-          <h3>Medical Equipment Utilization</h3>
-          <p>Exploring utilization, profitability and ROI to help hospitals make better decisions about medical imaging equipment.</p>
-          <span class="project-tools">Healthcare · Analytics · ROI</span>
-        </a>
-        <a class="project-card" href="https://github.com/r-muimih/UNICEF-Global-Child-Welfare" target="_blank" rel="noopener noreferrer">
-          <div class="project-meta"><span>02 / PUBLIC DATA</span><span aria-hidden="true">↗</span></div>
-          <h3>UNICEF Global Child Welfare</h3>
-          <p>An end-to-end R workflow exploring global child welfare indicators, from data collection and cleaning through analysis.</p>
-          <span class="project-tools">R · UNICEF data · Research</span>
-        </a>
-        <a class="project-card" href="https://github.com/r-muimih/Personal_Finance" target="_blank" rel="noopener noreferrer">
-          <div class="project-meta"><span>03 / PERSONAL FINANCE</span><span aria-hidden="true">↗</span></div>
-          <h3>Personal Finance Toolkit</h3>
-          <p>An Excel toolkit for tracking income and expenses, with visual summaries to make everyday budgeting easier.</p>
-          <span class="project-tools">Excel · Budgeting · Data visualization</span>
-        </a>
-      </div>
-    </section>
+    <div id="content" tabindex="-1">
+      <section class="content-section" aria-labelledby="about-title">
+        <h2 id="about-title">about</h2>
+        <p class="about-copy">I use data to make complex problems easier to understand. My clinical experience informs how I explore healthcare and public data: with context, care, and a focus on practical outcomes.</p>
+      </section>
 
-    <section class="contact section" id="contact" aria-labelledby="contact-title">
-      <div class="section-heading">
-        <p class="eyebrow">Have a question or idea?</p>
-        <span class="section-number">03</span>
-      </div>
-      <div class="contact-content">
-        <h2 id="contact-title">Let’s make<br /><span>something meaningful.</span></h2>
-        <a class="contact-link" href="mailto:ronnieranks66@gmail.com">ronnieranks66@gmail.com <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
+      <section class="content-section" aria-labelledby="work-title">
+        <h2 id="work-title">projects</h2>
+        <ul class="work-list">
+          <li>
+            <span class="work-date">healthcare</span>
+            <div class="work-entry">
+              <a href="https://github.com/r-muimih/Medical-Equipment-Utilization-Analysis" target="_blank" rel="noopener noreferrer">Medical Equipment Utilization ↗</a>
+              <p>Analyzing imaging equipment use, profitability, and return on investment.</p>
+            </div>
+          </li>
+          <li>
+            <span class="work-date">public data</span>
+            <div class="work-entry">
+              <a href="https://github.com/r-muimih/UNICEF-Global-Child-Welfare" target="_blank" rel="noopener noreferrer">UNICEF Global Child Welfare ↗</a>
+              <p>An R workflow for exploring global child health, education, nutrition, and welfare indicators.</p>
+            </div>
+          </li>
+          <li>
+            <span class="work-date">personal finance</span>
+            <div class="work-entry">
+              <a href="https://github.com/r-muimih/Personal_Finance" target="_blank" rel="noopener noreferrer">Personal Finance Toolkit ↗</a>
+              <p>An Excel toolkit for tracking income and expenses and understanding spending patterns.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="content-section writing" aria-labelledby="writing-title">
+        <h2 id="writing-title">writing</h2>
+        <p class="about-copy">Notes on data, healthcare, and what I’m learning along the way.</p>
+      </section>
+    </div>
   </main>
 
   <footer class="site-footer">
     <span>© 2026 Ronard Muimi</span>
-    <div class="footer-links">
-      <a href="https://github.com/r-muimih" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-      <a href="https://www.linkedin.com/in/ronard-muimi-468453144/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-      <a href="#top">Back to top ↑</a>
-    </div>
+    <a href="#main">Back to top ↑</a>
   </footer>
+
+  <script>
+    const themeToggle = document.querySelector(".theme-toggle");
+
+    function setTheme(theme) {
+      document.documentElement.dataset.theme = theme;
+      const nextTheme = theme === "dark" ? "light" : "dark";
+      themeToggle.setAttribute("aria-label", `Switch to ${nextTheme} mode`);
+      themeToggle.setAttribute("aria-pressed", String(theme === "dark"));
+      themeToggle.setAttribute("title", `Switch to ${nextTheme} mode`);
+      document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#171717" : "#ffffff";
+      try {
+        localStorage.setItem("theme", theme);
+      } catch {}
+    }
+
+    setTheme(document.documentElement.dataset.theme);
+    themeToggle.addEventListener("click", () => {
+      setTheme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
+    });
+  </script>
 </body>
 </html>

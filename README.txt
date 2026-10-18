@@ -1,10 +1,10 @@
 Ronard Muimi — Portfolio
 
-A responsive black-and-white portfolio built with plain HTML and CSS.
+A responsive, minimalist portfolio built with HTML, CSS, and a persistent light/dark theme toggle.
 
 Files
 - index.html — homepage and selected projects
-- style.css — responsive layout and styles
+- style.css — responsive layout and light/dark themes
 
 Preview locally by opening index.html in a browser.
 
